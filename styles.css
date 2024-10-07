@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --color-dark: #202b26;
+    --color-light: #F2DFD8;
+    --color-main: #D9965B;
+    --color-accent: #731D24;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    transition: 100ms ease-in-out;
+    overflow: scroll;
+}
+
+body {
+    background-color: var(--color-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.breaker {
+    width: 56vw;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+header {
+    height: 170px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-dark);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.h-logo {
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-main);
+    padding: 10px;
+    margin: 15px 0 10px 0;
+}
+
+.h-nav ul {
+    width: 500px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.h-nav li {
+    margin: 0 5px;
+}
+
+.h-nav a {
+    padding: 1px;
+    text-decoration: none;
+    color: var(--color-light);
+    margin: 5px;
+}
+
+.h-nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    width: 100%;
+    height: 45%;
+    padding: 70px 18vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+section .post {
+    width: 33%;
+    padding: 15px;
+    margin: 0 12px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+section .post:hover {
+    transform: scale(1.025);
+}
+
+.post-section {
+    padding: 25px 18vw;
+}
+
+.post-section h2::first-letter, .post-section p::first-letter {
+    text-transform: uppercase;
+}
+
+.section-1 {
+    background-color: var(--color-dark);
+}
+
+.section-1 .left {
+    color: var(--color-light);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-1 button {
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 45px;
+    background-color: var(--color-dark);
+    border: 1px solid var(--color-light);
+    color: var(--color-light);
+    cursor: pointer;
+}
+
+.section-1 button:hover {
+    color: var(--color-dark);
+    background-color: var(--color-light);
+}
+
+.section-1 .right {
+    width: 55%;
+    height: 100%;
+    background-image: url("golf1.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-2 {
+    height: 40%;
+    color: var(--color-dark);
+    padding: 35px 22vw 35px;
+}
+
+.section-2 .right {
+    width: 48%;
+}
+
+.section-2 .left {
+    width: 48%;
+    background-image: url("golf2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-3 {
+    height: 40%;
+    color: var(--color-dark);
+    padding: 35px 22vw 35px;
+}
+
+.section-3 .left {
+    width: 48%;
+}
+
+.section-3 .right {
+    width: 48%;
+    background-image: url("golf3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-4 {
+    margin-top: 35px;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    padding: 70px 22vw;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-4 p {
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    color: var(--color-light);
+    margin-bottom: 10px;
+}
+
+.section-5 {
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.section-5 .container {
+    width: 90%;
+    height: 140px;
+    background-color: var(--color-main);
+    padding: 0 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    color: var(--color-light);
+    font-size: 18px;
+}
+
+.section-5 button {
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: var(--color-main);
+    border: 1px solid var(--color-light);
+    color: var(--color-light);
+    cursor: pointer;
+}
+
+.section-5 button:hover {
+    background-color: var(--color-light);
+    color: var(--color-main);
+}
+
+footer {
+    height: 125px;
+    width: 100vw;
+    background-color: var(--color-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-light);
+
+}
+
+.weather-container {
+    width: 240px;
+    height: 300px;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.weather-section {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    height: fit-content;
+}
+
+.weather-container .stor {
+    font-size: 30px;
+}
